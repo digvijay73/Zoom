@@ -1,4 +1,9 @@
-const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+let IS_PROD = true;
+
+const server = IS_PROD ? 
+
+   "https://zoombackend-iqui.onrender.com":
+  
+  "http://localhost:8000"
+
+export default server;
